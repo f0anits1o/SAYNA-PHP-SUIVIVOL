@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #025043;
+}
+.header{
+    background-color: #035285;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: white;
+}
+.header .left{
+    margin-left: 1rem;
+}
+.header .right ul{
+    display: flex;
+    font-size: 2.5vw;
+}
+.header .right ul li{
+    list-style: none;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    margin-right: auto;
+    padding-right: 1.4rem;
+}
+.header .right ul li{
+    padding: 5px;
+    background-color: #035285;
+    border: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.header .right ul li a{
+    text-decoration: none;
+    color: white;
+}
+.header .right ul li a h2{
+    display: none;
+    position: absolute;
+    font-size: 25px;
+
+}
+.lienretourhome{
+    transform: translateY(-5px);
+}
+.lienretourhome a{
+    width: 150px;
+    display: flex;
+    height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.lienretourhome a img{
+    width: 20%;
+    rotate: -90deg;
+    padding-right: 4px;
+}
+
+.slogan{
+    width: 80vw;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 3vw;
+    margin: auto;
+    text-align: center;
+}
+
+.connexion{
+    display: flex;
+    position: absolute;
+    max-width: 90vw;
+    background: linear-gradient(#0364f6c2,#8090f5c7);
+    width: 600px;
+    height: 300px;
+    left: 20%;
+    top: 30%;
+    border-radius: 10px;
+   
+}
+.connexion form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.connexion form .nom,.connexion form .motdepasse{
+    display: flex;
+    width: 100%;
+}
+.connexion form .nom label,.connexion form .motdepasse label{
+    font-size: 22px;
+    color: white;
+    width: 30%;
+    padding-left: 10px;
+}
+.connexion form .motdepasse input,.connexion form .nom input{
+    padding: 6px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+.connexion form input[type="submit"]{
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #025043;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.connexion form a{
+    font-size: 20px;
+    color: #026197;
+}
+
+.connexion form a[href="inscription.php"]{
+    width: 60%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #025043;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #035285;
+    text-align: center;
+    color: white;
+    margin-top: 400px;
+}
+.footer .top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    justify-content: center;
+}
+.footer .top .left{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.footer .top .left img{
+    max-width: 170px;
+    border-radius: 50%; 
+}
+.footer .top .left p{
+    max-width: 150px;
+    text-align: center;
+}
+.footer .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.footer .bottom ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: rgba(200, 200, 200, 0.6);
+}
+.footer .bottom ul li{
+    list-style: none;
+}
+.footer .bottom ul li a{
+    text-decoration: none;
+    color: rgba(200, 200, 200, 0.6);
+    font-size: 20px;
+}
+.footer .bottom form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+.footer .bottom .left{
+    color: rgba(200, 200, 200, 0.6);
+}
+.footer .bottom form input[type="email"]{
+    padding: 5px;
+    border-radius: 5px;
+}
+.footer .bottom form input[type="submit"]{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #025043;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.footer .bottom form textarea{
+    border-radius: 8px;
+}
+
+
+@media screen  and (max-width:450px){
+    .header .right ul{
+        gap: 0.5rem;
+    }
+
+    .header .right ul li a{
+        font-size: 12px;
+    }
+
+    .connexion{
+        width: 95vw;
+        left: 5%;
+        height: 350px;
+    }
+    .connexion form input[type="submit"]{
+        width: 80%;
+    }
+    .connexion form a[href="inscription.php"]{
+        width:95%;
+        text-align: center;
+    }
+
+}

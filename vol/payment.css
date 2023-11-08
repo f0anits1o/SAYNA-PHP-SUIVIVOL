@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #025043;
+}
+.header{
+    background-color: #035285;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: white;
+}
+.header .left{
+    margin-left: 1rem;
+}
+.header .right ul{
+    display: flex;
+    font-size: 2.5vw;
+}
+.header .right ul li{
+    list-style: none;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    margin-right: auto;
+    padding-right: 1.4rem;
+}
+.header .right ul li{
+    padding: 5px;
+    background-color: #035285;
+    border: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.header .right ul li a{
+    text-decoration: none;
+    color: white;
+}
+.header .right ul li a h2{
+    display: none;
+    position: absolute;
+    font-size: 25px;
+
+}
+.lienretourhome{
+    transform: translateY(-5px);
+}
+.lienretourhome a{
+    width: 150px;
+    display: flex;
+    height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.lienretourhome a img{
+    width: 20%;
+    rotate: -90deg;
+    padding-right: 4px;
+}
+
+.slogan{
+    width: 80vw;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 3vw;
+    margin: auto;
+    text-align: center;
+}
+
+.inscrire{
+    position: absolute;
+    display: flex;
+    max-width: 90vw;
+    background: linear-gradient(#0364f6e1,#8090f5dc);
+    width: 500px;
+    height: 200px;
+    left: 25%;
+    top: 25%;
+    border-radius: 10px;
+}
+.inscrire form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.inscrire form input{
+    padding: 5px;
+    width: 60%;
+    border-radius: 5px;
+    margin-left: 6px;
+    background-color: rgba(200, 200, 200, 0.3);
+
+}
+.inscrire form input[type="submit"]{
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #025043;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.inscrire form .name,.inscrire form .motdepasse,.inscrire form .motdepasseconfirme{
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+
+}
+.inscrire form .name label,.inscrire form .motdepasse label,.inscrire form .motdepasseconfirme label{
+    width: 30%;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #035285;
+    text-align: center;
+    color: white;
+    margin-top: 400px;
+}
+.footer .top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    justify-content: center;
+}
+.footer .top .left{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.footer .top .left img{
+    max-width: 170px;
+    border-radius: 50%; 
+}
+.footer .top .left p{
+    max-width: 150px;
+    text-align: center;
+}
+.footer .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.footer .bottom ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: rgba(200, 200, 200, 0.6);
+}
+.footer .bottom ul li{
+    list-style: none;
+}
+.footer .bottom ul li a{
+    text-decoration: none;
+    color: rgba(200, 200, 200, 0.6);
+    font-size: 20px;
+}
+.footer .bottom form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+.footer .bottom .left{
+    color: rgba(200, 200, 200, 0.6);
+}
+.footer .bottom form input[type="email"]{
+    padding: 5px;
+    border-radius: 5px;
+}
+.footer .bottom form input[type="submit"]{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #025043;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.footer .bottom form textarea{
+    border-radius: 8px;
+}
+
+
+@media screen  and (max-width:450px){
+    .header .right ul{
+        gap: 0.5rem;
+    }
+    .header .right ul li{
+        margin: 5px;
+    }
+    .header .right ul li a{
+        font-size: 13px;
+        margin: auto;
+    }
+    .lienretourhome{
+        transform: unset;
+    }
+    .lienretourhome a img{
+        width: 25px;
+    }
+    .lienretourhome a{
+        width: 60px;
+        
+    }
+    .inscrire{
+        left: 6%;
+        height: 250px;
+    }
+
+}

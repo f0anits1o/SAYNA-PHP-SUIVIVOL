@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body{
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:yellow
+}
+
+li{
+    list-style: none;
+}
+
+h1,
+h2{
+    color: #444;
+}
+
+.menu-dasbord{
+    position: fixed;
+    background: rgb(10, 224, 214);
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-dasbord .dasbord-self{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-dasbord li{
+    font-size: 15px;
+    color: #444;
+    display: flex;
+    padding: 25px 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-dasbord li:hover{
+    background: #333;
+    color: white;
+}
+
+.menu-dasbord li img{
+    width: 4vw;
+    height: 4vh;
+}
+
+/* section container */
+.container{
+    position:absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height:10vh;
+    padding-bottom: 2vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+
+.container .header p{
+    margin-right: auto;
+    margin-left: 2vw;
+    text-transform: uppercase;
+}
+
+.container .header img{
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.container .header img{
+    width: 4vw;
+    height: 4vh;
+}
+
+.container .main{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+    background: lightblue;
+}
+
+.container .main img{
+    width: 2vw;
+    height: 2vh;
+}
+.container .main .filter{
+    margin-top: 14.5vh; 
+    width: 100%;
+    margin-left: auto;
+}
+.container .main .filter form{
+    display: flex;
+    width:100% ;
+    justify-content: center;
+}
+.container .main .filter form select{
+    background-color: #333fff;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.container .main .filter form input{
+    background-color: #025043;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+.container .main table{
+    margin: 1.5vw 0 0 0;
+}
+.container .main table th{
+    font-size: 13px;
+    background-color: #ddd;
+    text-align: center;
+    color: #1b203d;
+    padding: 5px 0;
+
+}
+.container .main table th:nth-last-child(){
+    width: 4vw;
+}
+.container .main table td{
+    padding:12px;
+    color: #268fd4;
+    text-align: center;
+    background: #f1f1f1;
+}
+.container .main table td .icon{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.container .main table td{
+
+    text-align: center;
+    
+}

@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #025043;
+}
+.header{
+    background-color: #035285;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: white;
+}
+.header .left{
+    margin-left: 1rem;
+}
+.header .right ul{
+    display: flex;
+    font-size: 2.5vw;
+}
+.header .right ul li{
+    list-style: none;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    margin-right: auto;
+    padding-right: 1.4rem;
+}
+.header .right ul li{
+    padding: 5px;
+    background-color: #035285;
+    border: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.header .right ul li a{
+    text-decoration: none;
+    color: white;
+}
+.lienretouradmin{
+    transform: translateY(-5px);
+}
+.lienretouradmin a{
+    width: 150px;
+    display: flex;
+    height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.lienretouradmin a img{
+    width: 20%;
+    rotate: -90deg;
+    padding-right: 4px;
+}
+
+/* Entrer un vol dans le site web */
+
+.entrervol{
+    position: absolute;
+    display: flex;
+    max-width: 80vw;
+    background: linear-gradient(#0365f6,#808ff5);
+    width: 600px;
+    height: 500px;
+    left: 24%;
+    top: 25%;
+    box-shadow: 5px 5px 60px #5864bf;
+    border-radius: 10px;
+   
+}
+.entrervol form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.entrervol form input{
+    padding: 5px;
+    width: 60%;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+.entrervol form input[type="submit"]{
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #025043;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.entrervol form .name,.entrervol form .place,.entrervol form .depart,.entrervol form .arrive,.entrervol form .prixparplace{
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+
+}
+.entrervol form .name label,.entrervol form .place label,.entrervol form .depart label,.entrervol form .arrive label,
+.entrervol form .prixparplace label{
+    width: 30%;
+    font-size: 17px;
+    color: #fff;
+}
+
+
+.footer{
+    margin-top: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #035285;
+    text-align: center;
+    color: white;
+}
+.footer .top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    justify-content: center;
+}
+.footer .top .left{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.footer .top .left img{
+    max-width: 170px;
+    border-radius: 50%; 
+}
+.footer .top .left p{
+    max-width: 150px;
+    text-align: center;
+}

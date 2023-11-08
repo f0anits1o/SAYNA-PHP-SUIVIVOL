@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100vw;
+    background-color: #1a27e0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    width: 40px;
+    height: 40px;
+}
+.header #numberofnotification{
+    position: absolute;
+    color: white;
+    top: 0;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.notification .message{
+    background-color: #f0dfaa;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: auto;
+
+}
+.notification .readmessage{
+    background-color: rgb(207, 198, 206);
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: auto;
+
+}
+.notification  h1{
+    font-size: 16px;
+    
+}
+.notification  h2{
+    font-size: 15px;
+}

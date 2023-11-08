@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link rel="stylesheet" href="notif.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../icones/alarm.svg" alt="" class="notif">
+        <h1 id="numberofnotification">10</h1>
+    </div>
+    
+    <div class="notification">
+        <div class="message">
+            <h1>From <span>SOLO</span></h1>
+            <h2>12:30</h2>
+        </div>
+        <div class="message">
+            <h1>From <span>SOLO</span></h1>
+            <h2>12:30</h2>
+        </div>
+        <div class="message">
+            <h1>From <span>SOLO</span></h1>
+            <h2>12:30</h2>
+        </div>
+        <div class="message">
+            <h1>From <span>SOLO</span></h1>
+            <h2>12:30</h2>
+        </div>
+    </div>
+    <script type="text/javascript">
+         let notifications=document.querySelectorAll('.message');
+         let numberofnotification=document.getElementById('numberofnotification');
+         numberofnotification.innerText=notifications.length;
+         let notifstext=numberofnotification.innerText;
+         notifications.forEach(notif=>{
+             notif.addEventListener('click',()=>{
+                 if(notif.classList!='readmessage'){
+                    notif.classList.replace('message','readmessage');
+                    notifstext=notifstext-1;
+                    numberofnotification.innerText=notifstext;
+                 }
+             });
+         });
+    </script>
+</body>
+</html>
